@@ -35,6 +35,10 @@
       </header>
       <aside class="sidebar">
         <nav class="sidebar__nav">
+          <div class="sidebar__nav-logo">
+               <p class="sidebar__nav-logo--text">Odin Logo</p>
+               <div class="sidebar__nav-logo-bar"><span class="mdi mdi-chevron-right"></span></div> 
+          </div>
           <div class="sidebar__nav-list">
             <a href="" class="sidebar__nav-list--item">
                 <span class="mdi mdi-home"></span>
@@ -46,6 +50,7 @@
             </a>
             <a href="" class="sidebar__nav-list--item">
               <span class="mdi mdi-message"></span>
+              <span>Messages</span>
             </a>
             <a href="" class="sidebar__nav-list--item">
                 <span class="mdi mdi-clock-time-three"></span>
@@ -53,7 +58,7 @@
             </a>
             <a href="" class="sidebar__nav-list--item">
               <span class="mdi mdi-file-document-multiple"></span>
-              <a>Tasks</a>
+              <span>Tasks</span>
             </a>
             <a href="" class="sidebar__nav-list--item">
                 <span class="mdi mdi-account-group"></span>
@@ -79,7 +84,7 @@
       </aside>
       <main class="main-content">
         <section class="project">
-          <h2 class="project__title">Your Projects</h2>
+          <h3 class="project__title heading">Your Projects</h3>
           <div class="project__list">
             <article class="project__card">
               <h2>Super Cool Project</h2>
@@ -218,73 +223,80 @@
             </article>
           </div>
         </section>
-        <section class="announcement">
-          <h3>Announcements</h3>
-          <ul class="announcement__list">
-            <li class="announcement__item">
-              <h3>Site Maintenance</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Quisquam adipisci, explicabo nostrum cum sed reiciendis deserunt
-                laboriosam sit dicta amet error voluptates molestiae blanditiis
-                ipsum?
-              </p>
-            </li>
-
-            <li class="announcement__item">
-              <h3>Community Shared Day</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Quisquam adipisci, explicabo nostrum cum sed reiciendis deserunt
-                laboriosam sit dicta amet error voluptates molestiae blanditiis
-                ipsum?
-              </p>
-            </li>
-
-            <li class="announcement__item">
-              <h3>Updated Privacy Policy</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Quisquam adipisci, explicabo nostrum cum sed reiciendis deserunt
-                laboriosam sit dicta amet error voluptates molestiae blanditiis
-                ipsum?
-              </p>
-            </li>
-          </ul>
-        </section>
-        <section class="trending">
-          <ul class="trending__list">
-            <li class="trending__item">
-              <img />
-              <div>
-                <span>@tagan</span>
-                <p>World Peace Builder</p>
-              </div>
-            </li>
-            <li class="trending__item">
-                <img />
-                <div>
-                  <span>@morgan</span>
-                  <p>Super Cool Project</p>
-                </div>
+        <div class="side-section">
+          <section class="announcement">
+            <h3 class="heading">Announcements</h3>
+            <ul class="announcement__list">
+              <li class="announcement__item">
+                <h3>Site Maintenance</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Quisquam adipisci.
+                 
+                </p>
               </li>
-
+  
+              <li class="announcement__item">
+                <h3>Community Shared Day</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Quisquam adipisci.
+                </p>
+              </li>
+  
+              <li class="announcement__item">
+                <h3>Updated Privacy Policy</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Quisquam adipisci.
+                </p>
+              </li>
+            </ul>
+          </section>
+          <section class="trending">
+            <h3 class="heading">Trending</h3>
+            <ul class="trending__list">
               <li class="trending__item">
-                <img />
+                <div class="trending__item-circle circle-one">
+                  <img/>
+                </div>
                 <div>
-                  <span>@kendall</span>
-                  <p>Life Changing App</p>
+                  <span>@tagan</span>
+                  <p>World Peace Builder</p>
                 </div>
               </li>
               <li class="trending__item">
-                <img />
-                <div>
-                  <span>@alex</span>
-                  <p>No Traffic Marker</p>
-                </div>
-              </li>
-          </ul>
-        </section>
+                  <div  class="trending__item-circle circle-two">
+                    <img/>
+                  </div>
+                  <div>
+                    <span>@morgan</span>
+                    <p>Super Cool Project</p>
+                  </div>
+                </li>
+  
+                <li class="trending__item">
+                  <div  class="trending__item-circle circle-three">
+                    <img/>
+                  </div>
+                  <div>
+                    <span>@kendall</span>
+                    <p>Life Changing App</p>
+                  </div>
+                </li>
+                <li class="trending__item">
+                  <div  class="trending__item-circle circle-four">
+                    <img/>
+                  </div>
+                  <div>
+                    <span>@alex</span>
+                    <p>No Traffic Marker</p>
+                  </div>
+                </li>
+            </ul>
+          </section>
+        </div>
+        
       </main>
     </div>
   </body>
