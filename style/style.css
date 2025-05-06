@@ -32,27 +32,85 @@ button{
     border: none;
     outline: none;
 }
+input{
+    /* border: none; */
+    outline: none;
+}
 .heading{
     font-size: 16px;
     margin-bottom: 10px;
 }
+.btn-action{
+    background-color: var(--blue-clr);
+    padding: 10px 30px;
+    border-radius: 30px;
+    color: var(--white-clr);
+    font-size: 16px;
+}
+.username{
+    font-weight: 700;
+}
 .grid-container{
     display: grid;
-    grid-template: 80px 1fr / 200px minmax(0, 1fr);
+    grid-template: auto 1fr / 200px minmax(0, 1fr);
     grid-template-areas: "sidebar header" "sidebar main";
     height: 100vh;
 }
 .header{
     background: var(--white-clr) ;
     grid-area: header;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    padding: 30px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
     
 }
 .user-profile{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    /* align-self: end; */
+    column-gap: 10px;
+    align-items: center;
+
+}
+.header-upper{
+    display: grid;
+    grid-template-columns: minmax(200px, 1fr) auto;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.header-lower{
+    display: grid;
+    grid-template-columns: minmax(200px, 1fr) auto;
+    align-items: center;
+
+}
+.user-profile{
+    display: flex;
+    align-items: center;
+    column-gap: 1.5em;
+    align-self: end;
+
+}
+.search-container input{
+    border: 1px solid var(--light-clr);
+    border-radius: 6px;
+    padding: 12px ;
+    font-size: 18px;
+    background-color: var(--light-clr);
+    
+}
+.notification-icon{
+    font-size: 23px;
+}
+
+.header-lower__msg{
+    display: flex;
+    gap: 20px;
+}
+.header-upper__action{
+   display: flex;
+   column-gap: 20px;
 }
 .sidebar{
     background: var(--blue-clr);
@@ -90,7 +148,7 @@ button{
     overflow-y: auto;
     display: grid;
     grid-template-columns: 3fr 1fr;
-   grid-template-areas: "project side";
+    grid-template-areas: "project side";
     padding: 30px;
     column-gap: 30px;
 }
@@ -152,8 +210,9 @@ button{
     padding-bottom: 12px;
     padding: 13px 0;
 }
-.trending__item-circle{
-    background-color: #101010;
+
+.icon-circled{
+    /* background-color: #101010; */
     width: 45px;
     height: 45px;
     border-radius: 100%;
@@ -170,3 +229,13 @@ button{
 .circle-four{
     background: var(--clr4);
 }
+
+/* Stack layout on smaller screens */
+@media (max-width: 900px) {
+    .main-content {
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        "project"
+        "side";
+    }
+  }
